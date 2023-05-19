@@ -1,0 +1,23 @@
+python scripts/train_new.py \
+--dataset_type celebvhq_encode \
+--exp_dir experiment5 \
+--use_w_pool \
+--l2_lambda 1 \
+--lpips_lambda 1 \
+--gradient_variance_lambda 0.4 \
+--id_lambda 0.1 \
+--id_latent_lambda 0 \
+--s_lambda 0 \
+--regularization_lambda 0 \
+--feature_reconstruction_lambda 0 \
+--w_discriminator_lambda 0.1 \
+--learning_rate 0.0002 \
+--progressive_start 20000 \
+--val_interval 10000 \
+--save_interval 50000 \
+--max_steps 200000 \
+--stylegan_size 1024 \
+--workers 8 \
+--batch_size 4 \
+--test_batch_size 4 \
+--test_workers 4 
